@@ -1,0 +1,78 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #555;
+    color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-color: #444;
+    padding: 50px;
+    min-width: 500px;
+    min-height: 500px;
+}
+
+.board{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+}
+
+.minesweeper-button{
+    width: 64px;
+    height: 64px;
+    border: 1px solid black;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #333;
+}
+
+.minesweeper-button:hover{
+    cursor: pointer;
+}
+
+.cell{
+    width: 64px;
+    height: 64px;
+    border: 1px solid black;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.cell img{
+    width: 58px;
+    height: 58px;
+}
+
+.cell p{
+    margin: 0;
+    font-size: 28px;
+}
+
+.end-dialog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.dark{
+    background-color: #333;
+}
